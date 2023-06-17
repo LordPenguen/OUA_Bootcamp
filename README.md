@@ -8,8 +8,8 @@ Unity 58
 -   Alperen Önal
 -   Elif Gümüştaş
 -   Neva Öztürk: Scrum Master/Developer
-- Osman Gündoğdu
-- Utku Gezensoy
+-   Osman Gündoğdu
+-   Utku Gezensoy
 
 ## Ürün İsmi
 
