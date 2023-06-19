@@ -38,12 +38,12 @@ first person bir RPG oyunudur.
 
 ## Sprint 1
 
-Sprint Notları: Backlogdaki itemlara tıklanarak puanlarına ve taglerine ulaşılabilir. 
+Sprint Notları: Backlogdaki itemlara tıklanarak puanlarına ve user storylere ulaşılabilir. 
 
-Sprint İçinde Tamamlanması Hedeflenen Puan: 60
+Sprint İçinde Tamamlanması Hedeflenen Puan: 70
 
 Puan Mantığı: Proje boyunca toplam 300 puanlık backlog bulunmaktadır. Üç sprint'e bölündüğünde, projenin başlangıcı ve takımın müsaitliği göz önüne alındığında
-60 puanla başlanılmasının ideal olduğuna karar verilmiştir. 
+70 puanla başlanılmasının ideal olduğuna karar verilmiştir. 
 
 Backlog Düzeni: Backlogumuz projedeki fikirlerin temel olarak belirlenmesi ve ana hatlarının çıkarılması üzerine kurulmuştur.
 
@@ -51,7 +51,7 @@ Daily Scrum: Daily Scrum'lar başlangıçta her gün müsaitlik durumuna göre 2
 https://drive.google.com/drive/folders/1aWT84PbsxtSOPru5hNOT8vYi3m-GOqR6?usp=sharing
 
 Sprint Board Update: Sprint Board'ın ekran görüntüsü
-![sprint_board](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/f1532ef5-19e8-47fb-89a9-3cbcafb60b3b)
+![Ekran görüntüsü 2023-06-19 173635](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/89a04cb0-2e54-43eb-a08c-a1962e91a0d2)
 
 Ürün Durumu: Ürün içi ekran görüntüleri
 ![Ekran görüntüsü 2023-06-19 003205](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/dab86b2d-7033-4b3c-8579-0dfee1bc8f30)
