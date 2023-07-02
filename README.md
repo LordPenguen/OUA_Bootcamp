@@ -34,7 +34,7 @@ first person bir RPG oyunudur.
   
 ## Product Backlog URL
 
-[Unity Team 58 Product Backlog ](https://trello.com/b/pn13lpMT/sprint-1)
+[Unity Team 58 Product Backlog ]([https://trello.com/w/ouau58])
 
 ## Sprint 1
 
@@ -51,7 +51,7 @@ Daily Scrum: Daily Scrum'lar başlangıçta her gün müsaitlik durumuna göre 2
 https://drive.google.com/drive/folders/1aWT84PbsxtSOPru5hNOT8vYi3m-GOqR6?usp=sharing
 
 Sprint Board Update: Sprint Board'ın ekran görüntüsü
-![Ekran görüntüsü 2023-06-19 173635](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/89a04cb0-2e54-43eb-a08c-a1962e91a0d2)
+![Ekran görüntüsü 2023-07-03 012806](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/afbcf351-4167-48b6-a225-a9c32eecb889)
 
 Ürün Durumu: Ürün içi ekran görüntüleri
 ![Ekran görüntüsü 2023-06-19 003205](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/dab86b2d-7033-4b3c-8579-0dfee1bc8f30)
@@ -63,3 +63,32 @@ Alınan Kararlar: Daily Scrum'ların toplantı notlarının çıkarılması gere
 Katılımcılar: Tüm ekip
 
 Sprint Retrospective: Takım içerisinde finallerden kaynaklanan müsait olmama durumları halledildi. Daily Scrum'ların daha çok üzerine düşülmesi gerektiği kararı alındı. İlk Sprint'te oyunun hikayesine odaklanıldığından ikinci Sprint'te oyunun teknik aksamlarının bitirilmesi gerektiği kararlaştırıldı. 
+
+
+
+## Sprint 2
+
+Sprint Notları: Backlogdaki itemlara tıklanarak puanlarına ve user storylere ulaşılabilir. 
+
+Sprint İçinde Tamamlanması Hedeflenen Puan: 100
+
+Puan Mantığı: Proje boyunca toplam 300 puanlık backlog bulunmaktadır. İlk sprintte oyunun ana hatları tamamlandı, ikinci sprintte bir prototip çıkılması gerektiği düşünüldüğünde 100 puanda karar kılındı.
+
+Backlog Düzeni: Backloglar spritnin sonunda sahne düzeni ve oyun akışıyla birlikte ortaya hedeflenen oyunun oynanabilir bir çıktısını almaya yönelik düzenlendi.
+
+Daily Scrum: Daily Scrum'lar başlangıçta her gün müsaitlik durumuna göre 21.00-22.00 arası yaklaşık 15-20 dakika sürecek şekilde Disord üzerinden alınıp, daha kolay haberleşilebilmesi dolayısı ile WhatsApp grubu açılacak devam edildi.
+https://drive.google.com/drive/folders/1aWT84PbsxtSOPru5hNOT8vYi3m-GOqR6?usp=sharing
+
+Sprint Board Update: Sprint Board'ın ekran görüntüsü
+![Ekran görüntüsü 2023-06-19 173635](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/89a04cb0-2e54-43eb-a08c-a1962e91a0d2)
+
+Ürün Durumu: Ürün içi ekran görüntüleri
+![Ekran görüntüsü 2023-07-03 013212](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/7e0a1bfc-60c3-46df-88bd-911fcf22c7ea)
+![Ekran görüntüsü 2023-07-03 013225](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/bec2cac7-0c91-46f2-aab8-dae437b96f69)
+![Ekran görüntüsü 2023-07-03 013152](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/80b8780d-a5b0-4273-a857-db6d2c7a2722)
+
+Sprint Review: 
+Alınan Kararlar: Oyun görev şeması tamamlandı, oyun ismi ile alakalı tartışmalar oraya açıldı, netleştirilebilmesi amacı ile üçüncü sprinte bırakıldı. Sahneleri tam birleştirilmemiş ancak oyun içi oyun mantığı ile çalışacak bütün oyunlarımızın oynanabilirliği tamamlandı. Tasarım değişikliğine gidilmesi kararı oy birliği ile reddedildi. 
+Katılımcılar: Tüm ekip
+
+Sprint Retrospective: Bayram nedeni ile müsaitlik durumlarının çakışmamasından dolayı üçüncü sprintte zamanın daha düzenli kullanılabilmesi konusunda karar kılındı. 
