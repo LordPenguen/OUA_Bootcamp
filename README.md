@@ -51,7 +51,7 @@ Daily Scrum: Daily Scrum'lar başlangıçta her gün müsaitlik durumuna göre 2
 https://drive.google.com/drive/folders/1aWT84PbsxtSOPru5hNOT8vYi3m-GOqR6?usp=sharing
 
 Sprint Board Update: Sprint Board'ın ekran görüntüsü
-![Ekran görüntüsü 2023-07-03 012806](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/afbcf351-4167-48b6-a225-a9c32eecb889)
+![Ekran görüntüsü 2023-06-19 173635](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/89a04cb0-2e54-43eb-a08c-a1962e91a0d2)
 
 Ürün Durumu: Ürün içi ekran görüntüleri
 ![Ekran görüntüsü 2023-06-19 003205](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/dab86b2d-7033-4b3c-8579-0dfee1bc8f30)
@@ -80,7 +80,7 @@ Daily Scrum: Daily Scrum'lar başlangıçta her gün müsaitlik durumuna göre 2
 https://drive.google.com/drive/folders/1aWT84PbsxtSOPru5hNOT8vYi3m-GOqR6?usp=sharing
 
 Sprint Board Update: Sprint Board'ın ekran görüntüsü
-![Ekran görüntüsü 2023-06-19 173635](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/89a04cb0-2e54-43eb-a08c-a1962e91a0d2)
+![Ekran görüntüsü 2023-07-03 012806](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/afbcf351-4167-48b6-a225-a9c32eecb889)
 
 Ürün Durumu: Ürün içi ekran görüntüleri
 ![Ekran görüntüsü 2023-07-03 013212](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/7e0a1bfc-60c3-46df-88bd-911fcf22c7ea)
