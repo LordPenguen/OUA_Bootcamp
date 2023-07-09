@@ -23,12 +23,14 @@ public class Player : MonoBehaviour
     [SerializeField] private float msBetweenJumps = .1f;
     bool grounded;
     float nextJumpTime;
+    float playerHeight;
 
     PlayerController playerController;
 
     private void Start()
     {
         playerController = GetComponent<PlayerController>();
+        playerHeight = transform.localScale.y;
     }
 
     private void Update()
@@ -77,9 +79,11 @@ public class Player : MonoBehaviour
             Ray ray = new Ray(transform.position, -transform.up);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 1 + .1f, groundMask))
+            if (Physics.Raycast(ray, out hit, playerHeight + .1f, groundMask))
                 grounded = true;
             else grounded = false;
         }  
     }
+   
 }
+    
