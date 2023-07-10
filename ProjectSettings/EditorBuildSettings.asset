@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Neva/NevaScene.unity
+    guid: f5a64b804890a944d8138a22517efe2c
+  - enabled: 1
+    path: Assets/Neva/Controls.unity
+    guid: a0bf392a7f724634ca633ff97d56837e
+  - enabled: 1
+    path: Assets/Neva/OptionsPre.unity
+    guid: 83a2782cd2cd4ca43b682c94d4eda48e
+  - enabled: 1
+    path: Assets/Neva/SoundOptions.unity
+    guid: e9a7aaaebf26fee4c85639b90e9425e2
+  - enabled: 1
+    path: Assets/Neva/VideoOptions.unity
+    guid: 9c2a898626379304587dce970174ec5b
   m_configObjects: {}
