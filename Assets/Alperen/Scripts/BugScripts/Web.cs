@@ -2,23 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Web : MonoBehaviour
+namespace BugGameNameSpace
 {
-    [SerializeField] private LayerMask collisionMask;
-    [Range(0, 2f)]
-    [SerializeField] private float clingTime = .75f;
-    Camera viewCamera;
-    bool isClinged = false;
-
-    void Start()
+    public class Web : MonoBehaviour
     {
-        viewCamera = Camera.main;
-    }
+        [SerializeField] private LayerMask collisionMask;
+        float clingTime = .60f;
+        Camera viewCamera;
+        bool isClinged = false;
+        float damage = 1;
 
-    void Update()
-    {
-        if (Input.GetMouseButton(0))
+        void Start()
         {
+            viewCamera = Camera.main;
+        }
+
+        public bool ShootWeb(float essentialClingTime)
+        {
+            if (isClinged)
+                return true;
+            clingTime = essentialClingTime;
             Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -29,31 +32,32 @@ public class Web : MonoBehaviour
                 Vector3 dir = ray.GetPoint(100) - transform.position;
                 Debug.DrawRay(transform.position, dir * 100f, Color.red);
                 EnemyBug enemyBug = hit.collider.GetComponent<EnemyBug>();
-                
+
                 if (enemyBug != null && !isClinged)
                 {
                     enemyBug.clinged = true;
                     print("enemy clinged = " + enemyBug.transform.name);
                     StartCoroutine(PullBug(enemyBug));
+                    return true;
                 }
-
             }
+            return false;
         }
-    }
 
-    IEnumerator PullBug(EnemyBug enemyBug)
-    {
-        isClinged = true;
-        float speed = 1 / clingTime;
-        float percent = 0;
-        Vector3 startPos = enemyBug.transform.position;
-        while (percent < 1)
+        IEnumerator PullBug(EnemyBug enemyBug)
         {
-            percent += Time.deltaTime * speed;
-            enemyBug.transform.position = Vector3.Lerp(startPos, transform.position, percent);
-            yield return null;
+            isClinged = true;
+            float speed = 1 / clingTime;
+            float percent = 0;
+            Vector3 startPos = enemyBug.transform.position;
+            while (percent < 1)
+            {
+                percent += Time.deltaTime * speed;
+                enemyBug.transform.position = Vector3.Lerp(startPos, transform.position, percent);
+                yield return null;
+            }
+            isClinged = false;
+            enemyBug.TakeBite(damage);
         }
-        isClinged = false;
-        enemyBug.gameObject.SetActive(false);
     }
 }

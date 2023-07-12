@@ -2,24 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Reptile : EnemyBug
+
+namespace BugGameNameSpace
 {
-    [SerializeField] private float climbSpeed = .45f;
-
-    float sqrDistanceToTarget;
-    Vector3 velocity;
-    bool isClimbing;
-
-    protected override void Start()
+    public class Reptile : EnemyBug
     {
-        base.Start();
-        isClimbing = true;
-    }
+        [SerializeField] private float climbSpeed = .45f;
 
-    protected override void Update()
-    {
-        if (!clinged)
+        float sqrDistanceToTarget;
+        Vector3 velocity;
+        bool isClimbing;
+
+        protected override void Start()
         {
+            base.Start();
+            isClimbing = true;
+        }
+
+        protected override void Update()
+        {
+            if (clinged)
+            {
+                return;
+            }
+
             base.Update();
             if (isClimbing)
             {
@@ -37,11 +43,13 @@ public class Reptile : EnemyBug
 
                 sqrDistanceToTarget = displacementToTarget.sqrMagnitude;
 
-                if (sqrDistanceToTarget > Mathf.Pow(myCollisionRadius + targetCollisionRadius + attackDistanceThreshold/2, 2))
+                if (sqrDistanceToTarget > Mathf.Pow(myCollisionRadius + targetCollisionRadius + attackDistanceThreshold / 2, 2))
                 {
                     transform.Translate(velocity * Time.deltaTime);
                 }
             }
+
         }
     }
+
 }
