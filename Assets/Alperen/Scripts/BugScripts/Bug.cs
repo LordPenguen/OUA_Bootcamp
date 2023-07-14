@@ -6,9 +6,9 @@ public class Bug : MonoBehaviour
 {
     public event System.Action OnDeath;
 
-    [SerializeField] protected float startingHealth;
+    [SerializeField] protected int startingHealth;
     protected bool dead;
-    protected float health;
+    protected int health;
 
     protected virtual void Start()
     {
@@ -16,7 +16,7 @@ public class Bug : MonoBehaviour
     }
 
 
-    public virtual void TakeBite(float damage)
+    public virtual void TakeBite(int damage)
     {
         health -= damage;
 
@@ -34,6 +34,10 @@ public class Bug : MonoBehaviour
         if (OnDeath != null)
         {
             OnDeath();
+        }
+        else
+        {
+            print("ondeath null");
         }
     }
 

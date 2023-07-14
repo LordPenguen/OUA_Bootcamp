@@ -9,14 +9,15 @@ namespace BugGameNameSpace
     [RequireComponent(typeof (Rigidbody))]
     public class PlayerBug : Bug
     {
+        public event System.Action<int> OnTakeDamage;
         [Range(0, 2f)]
-        [SerializeField] private float clingTime = .60f;
-        [SerializeField] private float emptyClingTime = .30f;
+        [SerializeField] private float clingTime = .9f;
+        [SerializeField] private float emptyClingTime = .37f;
         Vector3 moveAmount;
         Vector3 smoothMoveVelocity;
         Rigidbody myRigidbody;
         Web web;
-        bool isClinging = false;
+        public bool isClinging;
 
 
         protected override void Start()
@@ -28,11 +29,14 @@ namespace BugGameNameSpace
 
         void Update()
         {
-            Vector3 inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
-            Vector3 velocity = inputVector * 1.3f;
-            moveAmount = Vector3.SmoothDamp(velocity, moveAmount, ref smoothMoveVelocity, .15f);
-            LookAtPoint(velocity);
-            WebInput();
+            if (!dead)
+            {
+                Vector3 inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
+                Vector3 velocity = inputVector * 1.2f;
+                moveAmount = Vector3.SmoothDamp(velocity, moveAmount, ref smoothMoveVelocity, .15f);
+                LookAtPoint(velocity);
+                WebInput();
+            }
         }
 
         void FixedUpdate()
@@ -68,6 +72,22 @@ namespace BugGameNameSpace
         void DisableCling()
         {
             isClinging = false;
+        }
+
+        public override void TakeBite(int damage)
+        {
+            base.TakeBite(damage);
+            if (OnTakeDamage != null)
+            {
+                OnTakeDamage(health);
+            }
+        }
+
+        protected override void Die()
+        {
+            base.Die();
+            moveAmount = Vector3.zero;
+
         }
     }
 }

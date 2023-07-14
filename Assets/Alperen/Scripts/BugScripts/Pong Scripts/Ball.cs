@@ -73,7 +73,6 @@ namespace BugGameNameSpace
 
         void Score(bool isPlayerScored)
         {
-            print("scored");
             scored = true;
             direction = Vector3.zero;
 
