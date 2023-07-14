@@ -7,6 +7,8 @@ namespace BugGameNameSpace
     public class PongGameManager : MonoBehaviour
     {
         public event System.Action OnGameChange;
+        public event System.Action OnGameStarted;
+
         [Header("Screen Points")]
         [SerializeField] Transform topLeft;
         [SerializeField] Transform topRight;
@@ -34,6 +36,7 @@ namespace BugGameNameSpace
         Paddle playerPaddle;
         Paddle newAiPaddle;
         bool nextGameTransition = false;
+        bool pongGameStarted;
 
         void Awake()
         {
@@ -42,7 +45,7 @@ namespace BugGameNameSpace
             bottomLeftPos = bottomLeft.position;
             bottomRightPos = bottomRight.position;
 
-            InitializeBallAndPaddles();
+            //InitializeBallAndPaddles();
         }
 
         void InitializeBallAndPaddles()
@@ -95,6 +98,18 @@ namespace BugGameNameSpace
             if (Input.GetKeyDown(KeyCode.N))
             {
                 TesterNextGame();
+            }
+            if (!pongGameStarted)
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    InitializeBallAndPaddles();
+                    pongGameStarted = true;
+                    if (OnGameStarted != null)
+                    {
+                        OnGameStarted();
+                    }
+                }
             }
         }
 

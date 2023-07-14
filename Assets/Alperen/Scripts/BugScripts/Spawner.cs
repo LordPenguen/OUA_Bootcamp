@@ -22,7 +22,7 @@ namespace BugGameNameSpace
         int currentWaveIndex;
         int enemiesRemainingToSpawn;
         float nextSpawnTime;
-        int enemiesRemainingAlive = 0;
+        public int enemiesRemainingAlive = 0;
         Vector2 timeBetweenSpawnsMinMax;
 
         float gameStartTime;
@@ -49,7 +49,7 @@ namespace BugGameNameSpace
                     float timeBetweenSpawns = Mathf.Lerp(timeBetweenSpawnsMinMax.y, timeBetweenSpawnsMinMax.x, GetDifficultyPercent());
                     nextSpawnTime = Time.time + timeBetweenSpawns;
                     int spawnTransformIndex = Random.Range(0, enemyBugSpawnTranforms.Length);
-                    EnemyBug newBug = Instantiate(enemyBug, enemyBugSpawnTranforms[spawnTransformIndex].position, Quaternion.identity) as EnemyBug;
+                    EnemyBug newBug = Instantiate(enemyBug, enemyBugSpawnTranforms[spawnTransformIndex].position, Quaternion.identity);
                     newBug.OnDeath += EnemyDeath;
                     enemiesRemainingAlive++;
                     enemiesRemainingToSpawn--;

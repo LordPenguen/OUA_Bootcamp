@@ -47,9 +47,9 @@ MonoBehaviour:
   waves:
   - infinite: 1
     enemyCount: -1
-    timeBetweenSpawnsMinMax: {x: 2, y: 4}
+    timeBetweenSpawnsMinMax: {x: 5, y: 10}
     enemySkinColor: {r: 0, g: 0, b: 0, a: 0}
-  maxEnemyCount: 4
+  maxEnemyCount: 2
   secondsToMaxDifficulty: 70
   enemyBug: {fileID: 5187249226865226835, guid: 6dd5061fed744e246a7f4615efed4b39, type: 3}
   enemySpawnTranformParent: {fileID: 6827450491980670702, guid: daa7e17b50c84cb45b9b4bbf773b0da8, type: 3}
@@ -57,3 +57,4 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  enemiesRemainingAlive: 0

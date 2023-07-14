@@ -24,7 +24,7 @@ namespace BugGameNameSpace
         protected float myCollisionRadius;
         protected float targetCollisionRadius;
         protected Transform targetBugTransform;
-        protected float damage = 1;
+        protected int damage = 1;
 
         PlayerBug playerBug;
         Material material;
@@ -68,7 +68,7 @@ namespace BugGameNameSpace
             }
         }
 
-        public override void TakeBite(float damage)
+        public override void TakeBite(int damage)
         {
             // particle effect and stuff...
             base.TakeBite(damage);
