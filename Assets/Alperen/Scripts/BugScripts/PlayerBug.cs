@@ -12,7 +12,7 @@ namespace BugGameNameSpace
         public event System.Action<int> OnTakeDamage;
         [Range(0, 2f)]
         [SerializeField] private float clingTime = .9f;
-        [SerializeField] private float emptyClingTime = .37f;
+        [SerializeField] private float emptyClingTime = .45f;
         Vector3 moveAmount;
         Vector3 smoothMoveVelocity;
         Rigidbody myRigidbody;
@@ -29,7 +29,7 @@ namespace BugGameNameSpace
 
         void Update()
         {
-            if (!dead)
+            if (!dead && !isClinging)
             {
                 Vector3 inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
                 Vector3 velocity = inputVector * 1.2f;
@@ -37,6 +37,8 @@ namespace BugGameNameSpace
                 LookAtPoint(velocity);
                 WebInput();
             }
+
+            CheckYPosition();
         }
 
         void FixedUpdate()
@@ -61,11 +63,11 @@ namespace BugGameNameSpace
             if (Input.GetMouseButtonDown(0))
             {
                 bool clingedSomething = web.ShootWeb(clingTime);
-                float clingingTime = clingedSomething ? clingTime : emptyClingTime;
+                float clingingTime = clingedSomething ? clingTime : emptyClingTime ;
                 //print("cligned something = " + clingedSomething + " + clinging time = " + clingingTime);
                 isClinging = true;
                 moveAmount = Vector3.zero;
-                Invoke("DisableCling", clingingTime);
+                Invoke("DisableCling", (clingingTime + .25f));
             }
         }
 
@@ -88,6 +90,14 @@ namespace BugGameNameSpace
             base.Die();
             moveAmount = Vector3.zero;
 
+        }
+
+        void CheckYPosition()
+        {
+            if (transform.position.y < 0)
+            {
+                Die();
+            }
         }
     }
 }

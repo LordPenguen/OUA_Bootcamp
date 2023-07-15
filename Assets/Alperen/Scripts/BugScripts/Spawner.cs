@@ -49,7 +49,7 @@ namespace BugGameNameSpace
                     float timeBetweenSpawns = Mathf.Lerp(timeBetweenSpawnsMinMax.y, timeBetweenSpawnsMinMax.x, GetDifficultyPercent());
                     nextSpawnTime = Time.time + timeBetweenSpawns;
                     int spawnTransformIndex = Random.Range(0, enemyBugSpawnTranforms.Length);
-                    EnemyBug newBug = Instantiate(enemyBug, enemyBugSpawnTranforms[spawnTransformIndex].position, Quaternion.identity);
+                    Bug newBug = Instantiate(enemyBug, enemyBugSpawnTranforms[spawnTransformIndex].position, Quaternion.identity);
                     newBug.OnDeath += EnemyDeath;
                     enemiesRemainingAlive++;
                     enemiesRemainingToSpawn--;

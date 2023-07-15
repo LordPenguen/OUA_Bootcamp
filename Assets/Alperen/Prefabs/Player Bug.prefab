@@ -280,8 +280,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 1000
-  clingTime: 0.75
-  emptyClingTime: 0.37
+  clingTime: 1
+  emptyClingTime: 0.5
   isClinging: 0
 --- !u!114 &302217596398207801
 MonoBehaviour:

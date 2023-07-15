@@ -27,14 +27,14 @@ namespace BugGameNameSpace
         {
             if (isClinged)
                 return true;
-            clingTime = essentialClingTime;
+            clingTime = essentialClingTime/2;
             Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             trailObject.gameObject.SetActive(true);
 
-            if (Physics.Raycast(ray, out hit, 100, collisionMask))
+            if (Physics.Raycast(ray, out hit, 100))
             {
-                trailObject.MoveTowardsPosition(webMuzzle.position, hit.point, .4f);
+                trailObject.MoveTowardsPosition(webMuzzle.position, hit.point, .6f);
                 //print(hit.collider.name);
                 //Debug.DrawLine(transform.position, hit.point, Color.red);
                 Vector3 dir = ray.GetPoint(100) - transform.position;
@@ -52,6 +52,8 @@ namespace BugGameNameSpace
                     }
                     return true;
                 }
+                else
+                    return false;
             }
             //trailObject.gameObject.SetActive(false);
             return false;
@@ -60,7 +62,7 @@ namespace BugGameNameSpace
         IEnumerator PullBug(EnemyBug enemyBug)
         {
             yield return new WaitForSeconds(.25f);
-            trailObject.MoveTowardsPosition(enemyBug.transform.position, webMuzzle.transform.position, .35f);
+            //trailObject.MoveTowardsPosition(enemyBug.transform.position, webMuzzle.transform.position, .35f);
             isClinged = true;
             float speed = 1 / clingTime;
             //float speed = 3;

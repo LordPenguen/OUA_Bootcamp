@@ -33,7 +33,11 @@ public class TrailObject : MonoBehaviour
         while (percent <= 1)
         {
             percent += speed * Time.deltaTime;
-            transform.position = Vector3.Lerp(from, to, percent);
+
+            float interpolation = 4 * (-percent * percent + percent);
+            transform.position = Vector3.Lerp(from, to, interpolation);
+
+            //transform.position = Vector3.Lerp(from, to, percent);
             yield return null;
         }
         trail.time = -1;

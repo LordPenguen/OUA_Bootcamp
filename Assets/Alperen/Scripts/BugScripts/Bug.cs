@@ -37,7 +37,7 @@ public class Bug : MonoBehaviour
         }
         else
         {
-            print("ondeath null");
+            print("ondeath null name = " + name);
         }
     }
 
