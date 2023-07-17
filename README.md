@@ -1,4 +1,4 @@
-# **Takım İsmi**
+![resim](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/95e31576-b025-4d33-b86f-79da86c19b88)# **Takım İsmi**
 Unity 58
 
 # Ürün İle İlgili Bilgiler
@@ -13,12 +13,11 @@ Unity 58
 
 ## Ürün İsmi
 
-N/A
+not ~~home~~ alone
 
 ## Ürün Açıklaması
 
-N/A Genç bir çocuğun sinema salonunda uyuyakaldıktan sonra büyük bir AVM'de kilitli kaldığını öğrenmesi ile başlayıp rüya ve gerçek ayrımının çizgilerinde dolaşan,
-first person bir RPG oyunudur.
+not ~~home~~ alone genç bir çocuğun sinema salonunda uyuyakaldıktan sonra büyük bir AVM'de kilitli kaldığını öğrenmesi ile başlayıp rüya ve gerçek ayrımının çizgilerinde dolaşan, first person bir RPG oyunudur.
 
 ## Ürün Özellikleri
 
@@ -92,3 +91,32 @@ Alınan Kararlar: Oyun görev şeması tamamlandı, oyun ismi ile alakalı tart�
 Katılımcılar: Tüm ekip
 
 Sprint Retrospective: Bayram nedeni ile müsaitlik durumlarının çakışmamasından dolayı üçüncü sprintte zamanın daha düzenli kullanılabilmesi konusunda karar kılındı. 
+
+
+## Sprint 3
+
+Sprint Notları: Backlogdaki itemlara tıklanarak puanlarına ve user storylere ulaşılabilir. 
+
+Sprint İçinde Tamamlanması Hedeflenen Puan: 130
+
+Puan Mantığı: Proje boyunca toplam 300 puanlık backlog bulunmaktadır. İlk sprintte oyunun ana hatları tamamlandı, ikinci sprintte bir prototip çıkılması gerektiği düşünüldü, son sprintte oyunun tamamen bitirilmesi gerektiğine karar verildiği için geri kalan 130 puan uygun görüldü.
+
+Backlog Düzeni: Backloglar spritnin sonunda tamamlanmış bir oyun çıktısı alınabilmesi için düzenlendi.
+
+Daily Scrum: Daily Scrum'lar başlangıçta her gün müsaitlik durumuna göre 21.00-22.00 arası yaklaşık 15-20 dakika sürecek şekilde Disord üzerinden alınıp, daha kolay haberleşilebilmesi dolayısı ile WhatsApp grubu açılacak devam edildi.
+https://drive.google.com/drive/folders/1aWT84PbsxtSOPru5hNOT8vYi3m-GOqR6?usp=sharing
+
+Sprint Board Update: Sprint Board'ın ekran görüntüsü
+![Ekran görüntüsü 2023-07-17 125937](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/2cb93497-cc9a-4ff0-b969-d12910ce206d)
+
+Ürün Durumu: Ürün içi ekran görüntüleri
+![Ekran görüntüsü 2023-07-03 013212](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/7e0a1bfc-60c3-46df-88bd-911fcf22c7ea)
+![Ekran görüntüsü 2023-07-03 013225](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/bec2cac7-0c91-46f2-aab8-dae437b96f69)
+![Ekran görüntüsü 2023-07-03 013152](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/80b8780d-a5b0-4273-a857-db6d2c7a2722)
+
+Sprint Review: 
+Alınan Kararlar: Oyun tamamlandı, oyun içi oyunların hepsi birleştirildi. Oyunun buildi alındı ve bug fixler yapıldı. Oyun tamamlandı. 
+Katılımcılar: Tüm ekip
+
+Sprint Retrospective: Bütün ekip arkadaşlarımıza teşekkür edildi, bu yolculukta birlikte olduğumuz için birbirimize minnettarız. Çok güzel bir süreçti. 
+
