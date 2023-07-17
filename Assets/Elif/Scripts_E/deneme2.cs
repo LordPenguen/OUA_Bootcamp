@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class deneme : MonoBehaviour
+public class deneme2 : MonoBehaviour
 {
     public WinKey wk;
     
@@ -12,11 +12,11 @@ public class deneme : MonoBehaviour
          if(other.gameObject.tag == "Player" && Input.GetKeyDown("E"))
          { 
 
-            //PAcman GAMe
-            //SceneManager.LoadScene(8); 
+            //buggedGame
+            SceneManager.LoadScene(5); 
             wk.GainKey();
 
-            Debug.Log("pacgamen");
+            Debug.Log("buggedgame");
 
         }
     }
