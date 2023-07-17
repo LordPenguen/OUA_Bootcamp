@@ -16,12 +16,15 @@ public class PauseMenu : MonoBehaviour
     {
         if(!PlayerPrefs.HasKey("gameVolume")){
 
-        PlayerPrefs.SetFloat("gameVolume",startVolume);
-
         Load();
+
         }
 
-        else Load();
+        else 
+        {
+            PlayerPrefs.SetFloat("gameVolume",startVolume);
+            Load();
+        }
     }
 
     //control Volume of game
@@ -29,7 +32,6 @@ public class PauseMenu : MonoBehaviour
 
         AudioListener.volume = volumeSlider.value;
     }
-
     //Save the players changes
     private void Load(){
 

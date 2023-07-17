@@ -16,7 +16,7 @@ public class WinKey : MonoBehaviour
         {
             if(keyOwned)
             {
-                Debug.Log("You already win this key");
+                Debug.Log("You already won this key");
             } 
 
             else
