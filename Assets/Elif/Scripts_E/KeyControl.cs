@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class KeyControl : MonoBehaviour
 {
+    [SerializeField] private GameObject creditRawImage;
+
+    private int enoughKey;
+
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player" && GameVariables.keyCount == 3){
+        Check();
 
-            GameVariables.keyCount = 0;
+        if(other.gameObject.tag == "Player" && enoughKey == 3){
+
+            creditRawImage.gameObject.SetActive(true);
 
             Debug.Log("Door is open");
-            //opens the Dooor
-            
+
+            PlayerPrefs.SetInt("KeyOwned", 0);
         }
+
+        else
+        {
+            Debug.Log("You dont have enough keys");
+        }
+    }
+
+    private void Check()
+    {
+        enoughKey = PlayerPrefs.GetInt("KeyOwned");
     }
 }

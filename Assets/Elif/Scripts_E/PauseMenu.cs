@@ -16,12 +16,13 @@ public class PauseMenu : MonoBehaviour
     {
         if(!PlayerPrefs.HasKey("gameVolume")){
 
-        PlayerPrefs.SetFloat("gameVolume",startVolume);
-
-        Load();
+            PlayerPrefs.SetFloat("gameVolume",startVolume);
+            Load();
         }
-
-        else Load();
+        else 
+        {
+            Load();
+        }
     }
 
     //control Volume of game
@@ -29,7 +30,6 @@ public class PauseMenu : MonoBehaviour
 
         AudioListener.volume = volumeSlider.value;
     }
-
     //Save the players changes
     private void Load(){
 
@@ -76,7 +76,7 @@ public class PauseMenu : MonoBehaviour
     public void MainMenu()
     {
         //Main menü sahnesinin numarası yazılcak
-        // SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);
         Debug.Log("Sent to Main menu");
     }
 }
