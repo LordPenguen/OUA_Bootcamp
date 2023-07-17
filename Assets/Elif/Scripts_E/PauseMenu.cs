@@ -16,13 +16,11 @@ public class PauseMenu : MonoBehaviour
     {
         if(!PlayerPrefs.HasKey("gameVolume")){
 
-        Load();
-
+            PlayerPrefs.SetFloat("gameVolume",startVolume);
+            Load();
         }
-
         else 
         {
-            PlayerPrefs.SetFloat("gameVolume",startVolume);
             Load();
         }
     }

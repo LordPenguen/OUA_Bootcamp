@@ -4,27 +4,57 @@ using UnityEngine;
 
 public class WinKey : MonoBehaviour
 {
-    [SerializeField] private int enoughPoints; //points we want them to gain in order to win the key
-    private int points; //Initial Points or condition
+    private int startKey = 0;
+    private int keysTotal;
 
-    private bool keyOwned; //For not giving key twice
 
-    //Gives key when conditions are done
-    public void GainKey()
+    public void Deneme()
     {
-        if( points >= enoughPoints)
+        if(!PlayerPrefs.HasKey("KeyOwned"))
         {
-            if(keyOwned)
-            {
-                Debug.Log("You already won this key");
-            } 
+            PlayerPrefs.SetInt("KeyOwned",startKey);
+        }
 
-            else
-            {
-                Debug.Log("You win this key");
-                GameVariables.keyCount++;
-                keyOwned = true;
-            }
+        else 
+        {
+            PlayerPrefs.SetInt("KeyOwned",keysTotal); 
         }
     }
+
+    public void GainKey()
+    {
+        keysTotal =  keysTotal + 1;
+    }
+
+    public void GetPacmanKey()
+    {
+        
+        //Check if player won key from this game
+        if(PlayerPrefs.GetFloat("PacmanKey") > 4)
+        {
+            Debug.Log("You already got PacmanKey");
+        }
+        else
+        {
+            GainKey();
+            PlayerPrefs.SetFloat("PacmanKey", 5);
+            Debug.Log("You get PacmanKey");
+        }
+    }
+
+    public void GetBuggedKey()
+    {
+        //Check if player won key from this game
+        if(PlayerPrefs.GetFloat("BuggedKey") > 4)
+        {
+            Debug.Log("You already got BuggedKey");
+        }
+        else
+        {
+            GainKey();
+            PlayerPrefs.SetFloat("BuggedKey", 5);
+            Debug.Log("You get BuggedKey");
+        }
+    }
+
 }
