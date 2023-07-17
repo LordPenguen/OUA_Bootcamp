@@ -1,4 +1,4 @@
-![resim](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/95e31576-b025-4d33-b86f-79da86c19b88)# **Takım İsmi**
+## **Takım İsmi**
 Unity 58
 
 # Ürün İle İlgili Bilgiler
@@ -107,7 +107,7 @@ Daily Scrum: Daily Scrum'lar başlangıçta her gün müsaitlik durumuna göre 2
 https://drive.google.com/drive/folders/1aWT84PbsxtSOPru5hNOT8vYi3m-GOqR6?usp=sharing
 
 Sprint Board Update: Sprint Board'ın ekran görüntüsü
-![Ekran görüntüsü 2023-07-17 125937](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/2cb93497-cc9a-4ff0-b969-d12910ce206d)
+![Ekran görüntüsü 2023-07-17 125937](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/cb884654-ac75-4f92-a38a-d5349d8be926)
 
 Ürün Durumu: Ürün içi ekran görüntüleri
 ![Ekran görüntüsü 2023-07-03 013212](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/7e0a1bfc-60c3-46df-88bd-911fcf22c7ea)
