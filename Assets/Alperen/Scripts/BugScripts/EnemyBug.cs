@@ -27,7 +27,7 @@ namespace BugGameNameSpace
         protected int damage = 1;
 
         PlayerBug playerBug;
-        Material material;
+        //Material material;
 
 
         protected override void Start()
@@ -42,14 +42,15 @@ namespace BugGameNameSpace
                 targetCollisionRadius = targetBugTransform.localScale.x / 2;
             }
             myCollisionRadius = GetComponent<Transform>().localScale.x / 2;
-            material = GetComponent<Renderer>().material;
-            defaultColor = material.color;
+            //material = GetComponent<Renderer>().material;
+            //defaultColor = material.color;
         }
 
         protected virtual void Update()
         {
             if (targetAlive)
             {
+                //transform.LookAt(targetBugTransform);
                 if (Time.time > nextAttackTime)
                 {
                     float sqrDistanceToTarget = (targetBugTransform.position - transform.position).sqrMagnitude;
@@ -80,7 +81,7 @@ namespace BugGameNameSpace
             Vector3 startPosition = transform.position;
             Vector3 directionToTarget = (targetBugTransform.position - startPosition).normalized;
             Vector3 attackPosition = targetBugTransform.position - directionToTarget * (myCollisionRadius);
-            material.color = attackColor;
+            //material.color = attackColor;
             bool hasAppliedDamage = false;
             float percent = 0;
 
@@ -99,13 +100,13 @@ namespace BugGameNameSpace
                 yield return null;
             }
             currentState = State.Chasing;
-            material.color = defaultColor;
+            //material.color = defaultColor;
         }
 
         void OnTargetDeath()
         {
             print("player is dead");
-            material.color = Color.green;
+            //material.color = Color.green;
             targetAlive = false;
         }
 

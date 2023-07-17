@@ -12,6 +12,9 @@ namespace BugGameNameSpace
         //        float secondsToMaxSpeed = 10;
         [SerializeField] private float speed = .6f;
         [SerializeField] private Vector2 minMaxSpeed = new Vector2(.6f, 1.6f);
+        AudioSource audioSource;
+        [SerializeField] private AudioClip pongClip;
+        [SerializeField] private AudioClip scoreClip;
         float radius;
         Vector3 direction;
         bool scored;
@@ -20,6 +23,7 @@ namespace BugGameNameSpace
         {
             BallInitialize();
             radius = transform.localScale.x / 2;
+            audioSource = GetComponent<AudioSource>();
         }
 
         void Update()
@@ -59,6 +63,8 @@ namespace BugGameNameSpace
                 Paddle paddle = other. GetComponent<Paddle>();
                 if (paddle != null)
                 {
+                    audioSource.clip = pongClip;
+                    audioSource.Play();
                     direction.x *= -1;
                     direction.y = Random.Range(-1f, 1f);
 
@@ -75,6 +81,8 @@ namespace BugGameNameSpace
         {
             scored = true;
             direction = Vector3.zero;
+            audioSource.clip = scoreClip;
+            audioSource.Play();
 
             if (OnScored != null)
             {

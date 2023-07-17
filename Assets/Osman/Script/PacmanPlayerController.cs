@@ -4,24 +4,27 @@ using System.Collections.Generic;
 using System.Timers;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-public class PacmanPlayerController : MonoBehaviour
-{ 
-    private Vector3 velocity;
-    private Rigidbody _rigidbody;
+namespace PacmanGame
+{
+    [RequireComponent(typeof(Rigidbody))]
+    public class PacmanPlayerController : MonoBehaviour
+    { 
+        private Vector3 velocity;
+        private Rigidbody myRigidbody;
 
-    private void Start()
-    {
-        _rigidbody = GetComponent<Rigidbody>();
-    }
+        private void Start()
+        {
+            myRigidbody = GetComponent<Rigidbody>();
+        }
 
-    public void SetVelocity(Vector3 _velocity)
-    {
-        velocity = _velocity;
-    }
+        public void SetVelocity(Vector3 _velocity)
+        {
+            velocity = _velocity;
+        }
 
-    private void FixedUpdate()
-    {
-        _rigidbody.MovePosition(_rigidbody.position + velocity * Time.deltaTime);
+        private void FixedUpdate()
+        {
+            myRigidbody.MovePosition(myRigidbody.position + velocity * Time.deltaTime);
+        }
     }
 }

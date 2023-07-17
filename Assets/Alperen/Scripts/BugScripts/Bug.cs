@@ -7,7 +7,7 @@ public class Bug : MonoBehaviour
     public event System.Action OnDeath;
 
     [SerializeField] protected int startingHealth;
-    protected bool dead;
+    public bool dead;
     protected int health;
 
     protected virtual void Start()

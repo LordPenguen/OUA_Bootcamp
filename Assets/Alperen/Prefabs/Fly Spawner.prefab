@@ -47,7 +47,7 @@ MonoBehaviour:
   waves:
   - infinite: 1
     enemyCount: -1
-    timeBetweenSpawnsMinMax: {x: 0.5, y: 3}
+    timeBetweenSpawnsMinMax: {x: 1, y: 4}
     enemySkinColor: {r: 0, g: 0, b: 0, a: 0}
   maxEnemyCount: 10
   secondsToMaxDifficulty: 50
@@ -63,3 +63,4 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  enemiesRemainingAlive: 0

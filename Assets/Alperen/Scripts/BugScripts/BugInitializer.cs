@@ -9,8 +9,9 @@ namespace BugGameNameSpace
         [Header("Instantiate Objects")]
         [SerializeField] private GameObject reptileSpawner;
         [SerializeField] private GameObject flySpawner;
-        [SerializeField] private GameObject player;
+        [SerializeField] private PlayerBug player;
         [SerializeField] private Transform targetCameraPosition;
+        [SerializeField] private Transform mainCamOriginalPosition;
 
         Camera mainCamera;
 
@@ -45,19 +46,20 @@ namespace BugGameNameSpace
             Transform spawnerHolder = new GameObject(holderName).transform;
             spawnerHolder.parent = transform;
 
-            Instantiate(player, transform.position, transform.rotation, spawnerHolder);
+            PlayerBug playerBug = Instantiate(player, transform.position, transform.rotation, spawnerHolder) as PlayerBug;
             Instantiate(reptileSpawner, transform.position, transform.rotation, spawnerHolder);
             Instantiate(flySpawner, transform.position, transform.rotation, spawnerHolder);
+            playerBug.OnDeath += OnPlayerBugDeath;
         }
 
-        IEnumerator MoveCamera()
+        IEnumerator MoveCamera(Transform targetTransform, bool isInit)
         {
             float moveSpeed = 1 / movementSeconds;
             float percent = 0;
             Vector3 startPosition = mainCamera.transform.position;
             Quaternion startRotation = mainCamera.transform.rotation;
-            Vector3 targetPosition = targetCameraPosition.position;
-            Quaternion targetRotation = targetCameraPosition.rotation;
+            Vector3 targetPosition = targetTransform.position;
+            Quaternion targetRotation = targetTransform.rotation;
 
             yield return new WaitForSeconds(screenWaitSeconds);
 
@@ -68,12 +70,20 @@ namespace BugGameNameSpace
                 mainCamera.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, percent);
                 yield return null;
             }
-            Init();
+            if (isInit)
+            {
+                Init();
+            }
+        }
+
+        void OnPlayerBugDeath()
+        {
+            StartCoroutine(MoveCamera(mainCamOriginalPosition, false));
         }
 
         void InitializeBugGame()
         {
-            StartCoroutine(MoveCamera());
+            StartCoroutine(MoveCamera(targetCameraPosition, true));
         }
     }
 }

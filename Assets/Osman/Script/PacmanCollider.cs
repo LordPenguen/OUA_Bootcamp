@@ -4,20 +4,35 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PacmanCollider : MonoBehaviour
+namespace PacmanGame
 {
-    private int score = 0;
-    private void OnTriggerEnter(Collider other)
+    public class PacmanCollider : MonoBehaviour
     {
-        if (other.CompareTag("Ghost"))
+        public static int Score { get; private set; }
+
+        private void Start()
         {
-            GetComponent<PacmanPlayer>().Die();
+            Score = 0;
         }
-        if (other.CompareTag("Cherry"))
+
+        private void OnTriggerEnter(Collider other)
         {
-            Destroy(other.gameObject);
-            score++;
-            print("score"+score);
+            if (other.CompareTag("Ghost"))
+            {
+                GetComponent<PacmanPlayer>().Die();
+            }
+
+            if (other.CompareTag("Cherry"))
+            {
+                Destroy(other.gameObject);
+                Score++;
+
+                if (Score >= 82)
+                {
+                    print("Level completed");
+                    FindAnyObjectByType<PacmanGameManager>().LevelComplete();
+                }
+            }
         }
     }
 }
