@@ -9,7 +9,7 @@ public class deneme2 : MonoBehaviour
     
     private void OnTriggerStay(Collider other) {
         
-         if(other.gameObject.tag == "Player" && Input.GetKeyDown("E"))
+         if(other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
          { 
 
             //buggedGame

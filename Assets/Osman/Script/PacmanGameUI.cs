@@ -62,7 +62,8 @@ namespace PacmanGame
 
         public void ExitToMallScene()
         {
-            print("going to mall...");
+            //print("going to mall...");
+            SceneManager.LoadScene("ElifScene");
         }
 
         IEnumerator Fade(Color from, Color to, float time, bool isVisible)

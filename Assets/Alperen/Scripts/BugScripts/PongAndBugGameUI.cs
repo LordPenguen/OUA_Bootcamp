@@ -123,8 +123,8 @@ namespace BugGameNameSpace
 
         public void BackToMall()
         {
-            print("going to mall");
-         //   SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //print("going to mall");
+            SceneManager.LoadScene("ElifScene");
         }
     }
 }

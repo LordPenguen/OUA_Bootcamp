@@ -8,12 +8,12 @@ public class deneme : MonoBehaviour
     public WinKey wk;
     
     private void OnTriggerStay(Collider other) {
-        
-         if(other.gameObject.tag == "Player" && Input.GetKeyDown("E"))
+
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
          { 
 
             //PAcman GAMe
-            //SceneManager.LoadScene(8); 
+            SceneManager.LoadScene("PacmanScene"); 
             wk.GainKey();
 
             Debug.Log("pacgamen");
