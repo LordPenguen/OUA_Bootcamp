@@ -107,12 +107,15 @@ Daily Scrum: Daily Scrum'lar başlangıçta her gün müsaitlik durumuna göre 2
 https://drive.google.com/drive/folders/1aWT84PbsxtSOPru5hNOT8vYi3m-GOqR6?usp=sharing
 
 Sprint Board Update: Sprint Board'ın ekran görüntüsü
-![Ekran görüntüsü 2023-07-17 125937](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/cb884654-ac75-4f92-a38a-d5349d8be926)
+![Ekran görüntüsü 2023-07-17 125937]()
 
 Ürün Durumu: Ürün içi ekran görüntüleri
-![Ekran görüntüsü 2023-07-03 013212](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/7e0a1bfc-60c3-46df-88bd-911fcf22c7ea)
-![Ekran görüntüsü 2023-07-03 013225](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/bec2cac7-0c91-46f2-aab8-dae437b96f69)
-![Ekran görüntüsü 2023-07-03 013152](https://github.com/LordPenguen/OUA_Bootcamp/assets/119623211/80b8780d-a5b0-4273-a857-db6d2c7a2722)
+![Ekran görüntüsü 2023-07-03 013212](![11111111](https://github.com/LordPenguen/OUA_Bootcamp/assets/106696295/e0478a80-dc59-439e-a47e-8e47686c8eac)
+)
+![Ekran görüntüsü 2023-07-03 013225](![2222222](https://github.com/LordPenguen/OUA_Bootcamp/assets/106696295/02ed2bb2-2db7-44c7-ae6e-ccf2217e8f8d)
+)
+![Ekran görüntüsü 2023-07-03 013152](![3333333](https://github.com/LordPenguen/OUA_Bootcamp/assets/106696295/9470ef58-e293-4057-a099-b68e98cf4c54)
+)
 
 Sprint Review: 
 Alınan Kararlar: Oyun tamamlandı, oyun içi oyunların hepsi birleştirildi. Oyunun buildi alındı ve bug fixler yapıldı. Oyun tamamlandı. 
