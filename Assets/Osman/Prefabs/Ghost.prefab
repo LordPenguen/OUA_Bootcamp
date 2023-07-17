@@ -145,7 +145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   refreshRate: 1
-  delayTime: 30
 --- !u!136 &3259537869967224642
 CapsuleCollider:
   m_ObjectHideFlags: 0

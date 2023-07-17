@@ -9,7 +9,6 @@ namespace PacmanGame
     public class PacmanCollider : MonoBehaviour
     {
         public static int Score { get; private set; }
-        public WinMusicController winMusicController;
 
         private void Start()
         {
@@ -32,11 +31,6 @@ namespace PacmanGame
                 {
                     print("Level completed");
                     FindAnyObjectByType<PacmanGameManager>().LevelComplete();
-                    if (winMusicController != null)
-                    {
-                        winMusicController.PlayWinSound();
-                    }
-                    
                 }
             }
         }
