@@ -13,11 +13,20 @@ namespace BugGameNameSpace
         [Range(0, 2f)]
         [SerializeField] private float clingTime = .9f;
         [SerializeField] private float emptyClingTime = .45f;
+        [SerializeField] private Animator anim;
+        [SerializeField] private Material material;
+
+        [SerializeField] private AudioSource audioSource;
+        [SerializeField] private AudioClip deathClip;
+        [SerializeField] private AudioClip takeHitClip;
+        [SerializeField] private AudioClip[] webClips;
+
         Vector3 moveAmount;
         Vector3 smoothMoveVelocity;
         Rigidbody myRigidbody;
         Web web;
         public bool isClinging;
+        Color defaultColor;
 
 
         protected override void Start()
@@ -25,6 +34,9 @@ namespace BugGameNameSpace
             base.Start();
             myRigidbody = GetComponent<Rigidbody>();
             web = GetComponent<Web>();
+            anim = GetComponent<Animator>();
+            defaultColor = material.color;
+            audioSource = GetComponent<AudioSource>();
         }
 
         void Update()
@@ -36,6 +48,8 @@ namespace BugGameNameSpace
                 moveAmount = Vector3.SmoothDamp(velocity, moveAmount, ref smoothMoveVelocity, .15f);
                 LookAtPoint(velocity);
                 WebInput();
+                //Animating(inputVector.x, inputVector.y);
+                Animating(inputVector);
             }
 
             CheckYPosition();
@@ -68,6 +82,9 @@ namespace BugGameNameSpace
                 isClinging = true;
                 moveAmount = Vector3.zero;
                 Invoke("DisableCling", (clingingTime + .25f));
+                int randomClipIndex = Random.Range(0, 2);
+                audioSource.clip = webClips[randomClipIndex];
+                audioSource.Play();
             }
         }
 
@@ -78,7 +95,12 @@ namespace BugGameNameSpace
 
         public override void TakeBite(int damage)
         {
+            material.color = Color.red;
+            audioSource.clip = takeHitClip;
+            audioSource.Play();
+            Invoke("ColorChange", .2f);
             base.TakeBite(damage);
+
             if (OnTakeDamage != null)
             {
                 OnTakeDamage(health);
@@ -87,9 +109,15 @@ namespace BugGameNameSpace
 
         protected override void Die()
         {
-            base.Die();
-            moveAmount = Vector3.zero;
-
+            if (!dead)
+            {
+                base.Die();
+                moveAmount = Vector3.zero;
+                anim.SetTrigger("Die");
+                audioSource.clip = deathClip;
+                audioSource.Play();
+                //Destroy(gameObject, 8);
+            }
         }
 
         void CheckYPosition()
@@ -98,6 +126,28 @@ namespace BugGameNameSpace
             {
                 Die();
             }
+        }
+
+        void Animating(float horizontal, float vertical)
+        {
+            bool walking = horizontal != 0f || vertical != 0f;
+            print("horizontal = " + horizontal);
+            anim.SetBool("IsWalking", walking);
+        }
+
+        void Animating(Vector3 inputVector)
+        {
+            bool walking = inputVector.sqrMagnitude != 0;
+            if (isClinging)
+            {
+                walking = false;
+            }
+            anim.SetBool("IsWalking", walking);
+        }
+
+        void ColorChange()
+        {
+            material.color = defaultColor;
         }
     }
 }

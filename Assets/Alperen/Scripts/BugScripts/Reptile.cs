@@ -25,6 +25,10 @@ namespace BugGameNameSpace
             {
                 return;
             }
+            if (targetBugTransform == null)
+            {
+                return;
+            }
 
             base.Update();
             if (isClimbing)

@@ -41,11 +41,17 @@ namespace BugGameNameSpace
             {
                 if (targetAlive)
                 {
+                    Vector3 lookAtPosition = new Vector3(targetBugTransform.position.x, targetBugTransform.position.y + .4f, targetBugTransform.position.z);
+                    //transform.LookAt(lookAtPosition);
+                    if ((targetBugTransform.position - transform.position).sqrMagnitude >= .2f)
+                    {
+                        transform.LookAt(lookAtPosition);
+                    }
                     base.Update();
 
                     Vector3 dirToTarget = (targetBugTransform.position - transform.position).normalized;
 
-                    Vector3 targetPosition = targetBugTransform.position + dirToTarget * .75f + Vector3.up * 1f;
+                    Vector3 targetPosition = targetBugTransform.position + dirToTarget * .8f + Vector3.up * 1f;
                     transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref smoothVelocity, bugSpeed);
 
                     //if (currentState == State.Chasing)
@@ -62,16 +68,19 @@ namespace BugGameNameSpace
                 }
                 else
                 {
-                    Vector3 dirToTarget = (targetBugTransform.position - transform.position).normalized;
+                    if (targetBugTransform!=null)
+                    {
+                        Vector3 dirToTarget = (targetBugTransform.position - transform.position).normalized;
 
-                    Vector3 targetPosition = targetBugTransform.position - dirToTarget * .1f + Vector3.up * .05f;
-                    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref smoothVelocity, bugSpeed);
+                        Vector3 targetPosition = targetBugTransform.position - dirToTarget * .1f + Vector3.up * .05f;
+                        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref smoothVelocity, bugSpeed);
 
-                    float offsetX = Mathf.Sin(Time.time * frequency*2 + sinWaveAddition) * amplitude;
-                    float offsetZ = Mathf.Cos(Time.time * frequency*2) * amplitude;
+                        float offsetX = Mathf.Sin(Time.time * frequency * 2 + sinWaveAddition) * amplitude;
+                        float offsetZ = Mathf.Cos(Time.time * frequency * 2) * amplitude;
 
-                    transform.position += transform.right * offsetX * Time.deltaTime;
-                    transform.position += transform.forward * offsetZ * Time.deltaTime;
+                        transform.position += transform.right * offsetX * Time.deltaTime;
+                        transform.position += transform.forward * offsetZ * Time.deltaTime;
+                    }
                 }
             }
         }

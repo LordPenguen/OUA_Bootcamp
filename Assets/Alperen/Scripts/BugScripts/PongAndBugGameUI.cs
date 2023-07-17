@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace BugGameNameSpace
 {
@@ -20,17 +21,24 @@ namespace BugGameNameSpace
         [SerializeField] private Image[] healthbarImages;
         [SerializeField] private Color healthColor;
 
+        [Header("Bug GameOver")]
+        [SerializeField] private GameObject gameOverUI;
+        [SerializeField] private TMP_Text gameOverScoreText;
+
         int playerScore = 0;
         int aiScore = 0;
 
         float score = 0;
+        Color defaultFadeImageColor;
+
+        PlayerBug player;
 
         private void Start()
         {
             PongGameManager pongManager = FindObjectOfType<PongGameManager>();
             pongManager.OnGameStarted += OnGameStarted;
             pongManager.OnGameChange += OnNextGame;
-
+            defaultFadeImageColor = fadeImage.color;
         }
 
         void AddScore(bool isPlayerScored)
@@ -63,14 +71,16 @@ namespace BugGameNameSpace
 
         void SubscribeMethod()
         {
-            FindAnyObjectByType<PlayerBug>().OnTakeDamage += SetHealthBar;
+            player = FindAnyObjectByType<PlayerBug>();
+            player.OnTakeDamage += SetHealthBar;
+            player.OnDeath += OnPlayerBugDeath;
             FindObjectOfType<Web>().OnTargetDeath += OnTargetDeath;
             SetHealthBar(10);
         }
 
         void OnGameStarted()
         {
-            StartCoroutine(Fade(fadeImage.color, Color.clear, 1.5f, false));
+            StartCoroutine(Fade(defaultFadeImageColor, Color.clear, 1.5f, false));
             pressSapceText.SetActive(false);
             FindObjectOfType<Ball>().OnScored += AddScore;
         }
@@ -79,7 +89,14 @@ namespace BugGameNameSpace
         {
             score++;
             bugScore.text = "ERROR:" + score;
+        }
 
+        void OnPlayerBugDeath()
+        {
+            StartCoroutine(Fade(Color.clear, defaultFadeImageColor, 2, true));
+            bugGameInstructions.SetActive(false);
+            gameOverUI.SetActive(true);
+            gameOverScoreText.text = "ERROR:" + score;
         }
 
         IEnumerator Fade(Color from, Color to, float time, bool isVisible)
@@ -97,6 +114,17 @@ namespace BugGameNameSpace
             {
                 fadeImage.gameObject.SetActive(isVisible);
             }
+        }
+
+        public void StartNewGame()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        public void BackToMall()
+        {
+            print("going to mall");
+         //   SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

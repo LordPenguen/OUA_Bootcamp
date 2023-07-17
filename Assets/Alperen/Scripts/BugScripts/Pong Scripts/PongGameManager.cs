@@ -23,6 +23,7 @@ namespace BugGameNameSpace
         [Header("Game Transition Delay Fields")]
         [SerializeField] private float newGameDelay = 1f;
         [SerializeField] private float nextGameTransitionDelayTime = 5f;
+        [SerializeField] private AudioClip changeGameclip;
 
         public static Vector3 topLeftPos;
         public static Vector3 topRightPos;
@@ -37,6 +38,7 @@ namespace BugGameNameSpace
         Paddle newAiPaddle;
         bool nextGameTransition = false;
         bool pongGameStarted;
+        AudioSource audioSource;
 
         void Awake()
         {
@@ -44,7 +46,7 @@ namespace BugGameNameSpace
             topRightPos = topRight.position;
             bottomLeftPos = bottomLeft.position;
             bottomRightPos = bottomRight.position;
-
+            audioSource = GetComponent<AudioSource>();
             //InitializeBallAndPaddles();
         }
 
@@ -90,6 +92,8 @@ namespace BugGameNameSpace
             if (OnGameChange != null)
             {
                 OnGameChange();
+                audioSource.clip = changeGameclip;
+                audioSource.Play();
             }
         }
 
