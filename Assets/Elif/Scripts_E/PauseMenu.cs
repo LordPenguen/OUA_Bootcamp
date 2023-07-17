@@ -76,7 +76,7 @@ public class PauseMenu : MonoBehaviour
     public void MainMenu()
     {
         //Main menü sahnesinin numarası yazılcak
-        // SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);
         Debug.Log("Sent to Main menu");
     }
 }

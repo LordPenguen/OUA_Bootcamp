@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Neva/VideoOptions.unity
     guid: 9c2a898626379304587dce970174ec5b
+  - enabled: 1
+    path: Assets/Alperen/Scene/BugScene.unity
+    guid: c58f55b1dc4af494b8a43f26b187dfd2
+  - enabled: 1
+    path: Assets/Elif/ElifScene.unity
+    guid: 1caea8f44437f11478eee09d817bf622
   m_configObjects: {}
