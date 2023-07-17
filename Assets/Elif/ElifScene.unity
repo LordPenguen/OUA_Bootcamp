@@ -22734,6 +22734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 791326087}
   - component: {fileID: 791326088}
+  - component: {fileID: 791326089}
   m_Layer: 0
   m_Name: ColliderDoor
   m_TagString: Untagged
@@ -22764,11 +22765,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791326086}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.023651, y: 5.9054103, z: 3.1376953}
   m_Center: {x: 0.06289673, y: 0.6193073, z: 1.0688477}
+--- !u!114 &791326089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791326086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcfa2b57d87bd145b879f20542c035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creditRawImage: {fileID: 1303077808}
 --- !u!1001 &795723776
 PrefabInstance:
   m_ObjectHideFlags: 0
