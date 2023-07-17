@@ -2,28 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinKey : MonoBehaviour
+public  class WinKey : MonoBehaviour
 {
     private int startKey = 0;
     private int keysTotal;
+    public KeyUI keyColors;
 
-
-    public void Deneme()
+    public void OnEnable()
     {
-        if(!PlayerPrefs.HasKey("KeyOwned"))
+        if(PlayerPrefs.HasKey("KeyOwned"))
         {
-            PlayerPrefs.SetInt("KeyOwned",startKey);
+            PlayerPrefs.SetInt("KeyOwned",keysTotal);
         }
 
         else 
         {
-            PlayerPrefs.SetInt("KeyOwned",keysTotal); 
+            PlayerPrefs.SetInt("KeyOwned",startKey); 
         }
     }
 
     public void GainKey()
     {
-        keysTotal =  keysTotal + 1;
+        keysTotal = keysTotal + 1;
+        PlayerPrefs.SetInt("KeyOwned",keysTotal);
+        keyColors.weirdUpdate();
     }
 
     public void GetPacmanKey()

@@ -13,7 +13,7 @@ public class KeyControl : MonoBehaviour
     {
         Check();
 
-        if(other.gameObject.tag == "Player" && enoughKey == 3){
+        if(other.gameObject.tag == "Player" && enoughKey == 2){
 
             creditRawImage.gameObject.SetActive(true);
 
