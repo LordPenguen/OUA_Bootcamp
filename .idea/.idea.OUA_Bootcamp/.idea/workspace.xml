@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a7db795-27a3-437f-8cb4-72fa68ba094b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OUA_Bootcamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OUA_Bootcamp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Osman/PacmanScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Osman/PacmanScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Osman/Prefabs/Ghost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Osman/Prefabs/Ghost.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Osman/Prefabs/Pacman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Osman/Prefabs/Pacman.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Osman/Script/PacmanCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Osman/Script/PacmanCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Osman/_ChompMan-PM/Prefabs/Characters/Chomp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Osman/_ChompMan-PM/Prefabs/Characters/Chomp.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Osman/Script/MusicDead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Osman/Script/WinMusicController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -23,6 +33,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -88,6 +99,9 @@
       <workItem from="1689190273576" duration="3440000" />
       <workItem from="1689277664623" duration="4460000" />
       <workItem from="1689371289159" duration="91000" />
+      <workItem from="1689617162878" duration="1038000" />
+      <workItem from="1689618415517" duration="1207000" />
+      <workItem from="1689619841718" duration="3437000" />
     </task>
     <servers />
   </component>
