@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -309,9 +309,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Haydi ba\u015Flayal\u0131m"
+  m_text: Let's go.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -439,8 +439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "\u015Eaka yap\u0131yorum can\u0131m. Buras\u0131 benim d\xFCnyam ve benim
-    d\xFCnyamda kimse ama kimse UYANAMAZ..."
+  txt: I'm just kidding. NOBODY wakes up in my world.
 --- !u!114 &12980508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,8 +462,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
+  m_sharedMaterial: {fileID: 8849891343644727290, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -571,7 +570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: Hey buraya gel...
+  txt: Hey...come here.
 --- !u!114 &99639629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,7 +593,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -975,9 +974,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "Sabah olmadan uyanmak zorundas\u0131n. E\u011Fer bunu yapamazsan i\u015Fte
-    o zaman ger\xE7ek hayatta sonsuza dek uyursun. Yani burada kal\u0131rs\u0131n.
-    Benimle... \u015Fey yani buradan \xE7\u0131kmak i\xE7in hemen yola koyulman laz\u0131m."
+  txt: 'You need to wake up before the sun rises. If you don''t do that, well, then
+    you''ll never wake up. So you need to get going. '
 --- !u!114 &291167142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1000,7 +998,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1637,8 +1635,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "Buraya her gece bir yeni \xE7ocuk gelir. Sana asla uyanamayaca\u011F\u0131n\u0131
-    s\xF6yledi di mi. BU KOCA B\u0130R YALAN..."
+  txt: Every day, a new young one comes here. She said that you'll never wake up
+    and whatever, right? Well, that's a big lie.
 --- !u!114 &579272513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1661,7 +1659,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1887,9 +1885,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "Ben kabuslar krali\xE7esi. Her g\xFCn bir \xE7ocu\u011Fun kabuslar\u0131na
-    girer ve onlar\u0131 hapsederim. Benim d\xFCnyam, benim kurallar\u0131m. Tek
-    bir kural var: UYANAMAZSIN."
+  txt: I'm the nightmare lady. I get into dreams of the young ones and trap them.
+    My world, my rules. You'll never wake up.
 --- !u!114 &606876423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1912,7 +1909,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2120,9 +2117,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sen neden buradas\u0131n?"
+  m_text: Why are you here?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2999,8 +2996,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "Ben Katy. Y\u0131llard\u0131r bu kad\u0131n\u0131 \xE7ekmekle lanetlendim.
-    Fakat burada bo\u015F bo\u015F oturup da kalmad\u0131m."
+  txt: I'm Katy. I've been cursed by this one hell of a woman. But I didn't just
+    hanged around and whatever, like she said.
 --- !u!114 &878732014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3023,7 +3020,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3273,10 +3270,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "Ben lanetlendim. Uzun hikaye. Her gece gelenleri kar\u015F\u0131lar\u0131m.
-    Lady Nightmare onlara buradan ka\xE7mak i\xE7in bir \u015Fans verdi\u011Fimi
-    asla bilmez. Onlar\u0131 oryantasyona soktu\u011Fumu zanneder. Sabah olunca da
-    buradakileri almaya gelir. Emin ol onunla gitmek istemezsin."
+  txt: I've been cursed. Long story. I welcome the newcomers around here. Lady Nightmare
+    never knows that I give all of them a second chance. She thinks this is some
+    kind of...orientation? I don't know what she thinks. She'll come here to get
+    you in the morning. Trust me, you don't want to be here when she comes.
 --- !u!114 &984856643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3299,7 +3296,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3452,9 +3449,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Benden ne istiyorsun?
+  m_text: What do you want from me?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3518,7 +3515,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1043600412
@@ -3562,11 +3559,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "Hi\xE7bir \u015Fey istemiyorum can\u0131m. Tak\u0131l buralarda kendine arkada\u015F
-    falan edin ne bileyim. Sonu\xE7ta sonsuza kadar burada kalacaks\u0131n. \u015Eimdi
-    ben gidiyorum, yar\u0131n aram\u0131za kat\u0131lacak \xE7ocu\u011Fun neleri
-    sevmedi\u011Fi hakk\u0131nda ara\u015Ft\u0131rma yapmam laz\u0131m. Dedi\u011Fim
-    gibi keyfine bak."
+  txt: I don't really wany anything, really. Just hang around and whatever. You'll
+    be here for forever anyways. I'm leaving now, I need to look into the next young
+    one's likes and dislikes. Like I said, do whatever...
 --- !u!114 &1092822626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3589,7 +3584,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3777,7 +3772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "Bak\u0131yorum da uyanm\u0131\u015Fs\u0131n. "
+  txt: I see, you've woken up.
 --- !u!114 &1111160697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3800,8 +3795,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
+  m_sharedMaterial: {fileID: 8849891343644727290, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3984,8 +3979,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
+  m_sharedMaterial: {fileID: 8849891343644727290, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4065,7 +4060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "Muhtemelen kafanda bir\xE7ok soru vard\u0131r. Hadi \xE7ekinme sor bakal\u0131m."
+  txt: You probably have a lot of questions in mind, go ahead, shoot.
 --- !u!222 &1215495166
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4683,7 +4678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "Sahneye yakla\u015F, hadi. \xC7ok vaktimiz yok."
+  txt: Come closer, we don't have much time.
 --- !u!114 &1324502501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4706,7 +4701,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5023,8 +5018,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 070fba048a0c61b4dacd1480fddb524d, type: 2}
+  m_sharedMaterial: {fileID: 8849891343644727290, guid: 070fba048a0c61b4dacd1480fddb524d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5112,7 +5107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: Aaaa merhaba...
+  txt: Oh, hi...
 --- !u!1 &1455839444
 GameObject:
   m_ObjectHideFlags: 0
@@ -5146,9 +5141,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "\u015Eu anda ger\xE7ek hayatta bir sinema salonundas\u0131n. Fakat buradan
-    bahsediyorsan... Buras\u0131 benim oyun alan\u0131m, d\xFCnyam. En sevmedi\u011Fin
-    yer olan lise. Seni bu sonsuz kabusun i\xE7ine hapsettim. Uyanamayacaks\u0131n... "
+  txt: Right now, in real life, you're in a movie theatre. But if you're talking
+    about here...it's my playground here...my world. Your worst nightmare, the highschool.
+    You're trapped here. You'll never wake up.
 --- !u!114 &1455839446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5171,7 +5166,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5402,7 +5397,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5466,7 +5461,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1522992962
@@ -5809,9 +5804,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Katy
+  m_text: KATY
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5977,9 +5972,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Buradan Nas\u0131l \xC7\u0131kar\u0131m?"
+  m_text: How do I get out?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6163,10 +6158,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.08
   TypeSfx: {fileID: 1769794}
-  txt: "\u015Eimdi seni ger\xE7ek bedenine geri d\xF6nd\xFCr\xFCcem. Ama ger\xE7ekte
-    hala uyuyor olacaks\u0131n. Kendini bir hayalet gibi d\xFC\u015F\xFCn. Avm'ye
-    sakl\u0131 anahtarlar\u0131 bulman gerek. G\xFCn do\u011Fmadan hepsini bulursan
-    ger\xE7ekten uyanabilirsin. E\u011Fer bulamazsan..."
+  txt: Now, I'll get you back to your own body. But you'll be sleeping in your reality.
+    Think of it as like, some kind of, ghost. You need to find the hidden keys in
+    the mall. If you find them all, then you'll actually wake up. If you can't...
 --- !u!114 &1651420411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6189,7 +6183,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6540,7 +6534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Katy
+  m_text: KATY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7197,8 +7191,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: LADY NIGHTMARE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
+  m_sharedMaterial: {fileID: 8849891343644727290, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7282,6 +7276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1958457617}
   - component: {fileID: 1958457616}
+  - component: {fileID: 1958457618}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -7366,6 +7361,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1958457618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958457615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &2014267384
 GameObject:
   m_ObjectHideFlags: 0
@@ -7857,9 +7872,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sen kimsin?
+  m_text: Who are you?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7923,7 +7938,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2045577874
@@ -7994,7 +8009,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: LADY NIGHTMARE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8279,9 +8294,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ben neredeyim?
+  m_text: Where am I?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9418b9225524d934ba1959afd539f8b3, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8345,7 +8360,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2069088057
